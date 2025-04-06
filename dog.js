@@ -14,8 +14,11 @@ d.bark();
 e.bark();
 
 class Dice {
+    constructor() {
+        this.result = Math.floor(Math.random() * 6) + 1;
+    }
     roll() {
-        console.log(Math.floor(Math.random() * 6) + 1);
+        console.log(`The dice rolled a ${dice.result}`);
     }
 }
 
