@@ -14,12 +14,10 @@ d.bark();
 e.bark();
 
 class Dice {
-
-    constructor(sides) {
-        this.sides = sides;
-    }
     roll() {
-        return Math.floor(Math.random() * this.sides) + 1;
+        console.log(Math.floor(Math.random() * 6) + 1);
     }
-
 }
+
+const dice = new Dice();
+dice.roll();
