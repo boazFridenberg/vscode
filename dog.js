@@ -15,12 +15,14 @@ e.bark();
 
 class Dice {
     constructor() {
-        this.result = Math.floor(Math.random() * 6) + 1;
+        this.roll;
     }
     roll() {
-        console.log(`The dice rolled a ${dice.result}`);
+        this.result = Math.ceil(Math.random() * 6);
     }
 }
 
 const dice = new Dice();
+console.log(dice.result);
 dice.roll();
+console.log(dice.result);
