@@ -15,7 +15,7 @@ e.bark();
 
 class Dice {
     constructor() {
-        this.roll;
+        this.roll();
     }
     roll() {
         this.result = Math.ceil(Math.random() * 6);
